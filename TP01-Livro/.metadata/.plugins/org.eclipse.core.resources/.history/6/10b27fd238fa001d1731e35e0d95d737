@@ -1,0 +1,17 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Exercicio_07 {
+	public static void main (String [] args) {
+		Scanner teclado = new Scanner (System.in);
+		
+		System.out.println("Adicione o numero inteiro: ");
+		int num1 = teclado.nextInt();
+		
+		System.out.println("Adicione o segundo inteiro: ");
+		int num2 = teclado.nextInt();
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package principal;
+
+public class HeartRatesTest {
+	public static void main (String [] args) {
+		HeartRates p1 = new HeartRates ("João", "Silva", 26, 7, 2001);
+		
+		System.out.println("Nome: "+ p1.calcularIdade());
+		System.out.println("Frequencia Cardiaca Maxima: "+ p1.calcularFrequenciaCardiacaMaxima());
+		System.out.println("Frequencia Cardiaca Alvo: "+ p1.calcularFrequenciaCardiacaAlvo());
+	}
+
+}

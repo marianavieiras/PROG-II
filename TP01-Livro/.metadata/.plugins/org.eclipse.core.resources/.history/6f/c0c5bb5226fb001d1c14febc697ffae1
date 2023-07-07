@@ -1,0 +1,39 @@
+package principal;
+
+import java.util.Scanner;
+
+public class main {
+	public static main (String [] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+	System.out.println("1- Comprar ingresso para o cinema");
+	System.out.println("2- Sair");
+	int op = teclado.nextInt();
+	
+switch (op) {
+	case 1: 
+		System.out.println("Nome: ");
+		String nome = teclado.next();
+		System.out.println("Idade: ");
+		int idade = teclado.nextInt();
+		System.out.println("Sexo: ");
+		String sexo = teclado.next();
+		System.out.println("Sessão que deseja: ");
+		int sessao = teclado.nextInt();
+		System.out.println("Fileira que deseja: ");
+		int fileira = teclado.nextInt();
+		System.out.println("Cadeira que deseja: ");
+		int cadeira = teclado.nextInt();
+
+		cliente Cliente = new cliente(nome, idade, sexo);
+		System.out.println("Cliente: "+ Cliente.getNome());
+		sala Sala = new sala (cadeira, fileira, sessao);
+		Sala.ocupaCadeira(fileira, cadeira, sessao);
+		
+	case 2: 
+		System.out.println("Sainda...");
+	
+	
+	}
+}
+}

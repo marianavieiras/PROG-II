@@ -1,0 +1,21 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Exercicio_2_25 {
+	public static void main (String [] args) {
+		Scanner teclado = new Scanner (System.in);
+		
+		System.out.println("Adicione um numero interio para saber se ele é par ou impar:");
+		int num = teclado.nextInt();
+		
+		if (num%2 != 0) {
+			System.out.println("Esse numero é impar!");
+		} else if (num%2 == 0) {
+			System.out.println("Esse numero é par!");
+		}
+		
+		teclado.close();
+	}
+
+}

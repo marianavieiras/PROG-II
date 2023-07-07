@@ -1,0 +1,32 @@
+package principal;
+
+public class sala{
+	private int numC;
+	private int numF;
+	private boolean [][][] CadF = new boolean[5][10][6];
+	private int sessao;
+
+	public sala(int numC, int numF, int sessao){
+		this.numC = numC;
+		this.numF = numF;
+		this.sessao = sessao;
+		this.CadF = new boolean [sessao][numF][numC];
+	}
+	
+	public void ocupaCadeira() {
+		if (sessao >= 1 && sessao <= 5) {
+				if (CadF[this.sessao][this.numF][this.numC] == false) {
+					CadF[this.sessao][this.numF][this.numC]= true;
+					System.out.println("Ingresso vendido com sucesso!");
+				} else if (CadF[this.sessao][this.numF][this.numC] == true) {
+					System.out.println("Cadeira e fileira escolhida estão ocupadas!");
+				} 
+			}  else {
+				System.out.println("Sessão invalida!");
+			}
+		}
+	
+	
+	}
+
+

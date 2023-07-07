@@ -1,0 +1,11 @@
+package principal;
+
+public class Exercicio_10 {
+	public static void main (String [] args) {
+		for (int i=0; i<10; i++) {
+			int square = i*i;
+			int cube = i*i*1;
+			System.out.println("Number: "+ i +"Square: "+square+"Cube: "+cube+"\n");
+		}
+	}
+}

@@ -1,0 +1,38 @@
+
+public class Exercicio_3_11 {
+	private String courseName; // Nome do curso
+    private String instrutorName; // Nome do instrutor
+
+    // Construtor que inicializa o nome do curso e do instrutor
+    public Exercicio_3_11(String courseName, String instrutorName) {
+        this.courseName = courseName;
+        this.instrutorName = instrutorName;
+    }
+
+    // Método para configurar o nome do instrutor
+    public void setInstrutorName(String instrutorName) {
+        this.instrutorName = instrutorName;
+    }
+
+    // Método para recuperar o nome do instrutor
+    public String getInstrutorName() {
+        return instrutorName;
+    }
+
+    // Exibe uma mensagem de boas-vindas, nome do curso e nome do instrutor
+    public void displayMessage() {
+        System.out.printf("Welcome to the GradeBook for\n%s!\n", getCourseName());
+        System.out.println("This course is presented by: " + instrutorName);
+    }
+
+    // Método para configurar o nome do curso
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    // Método para recuperar o nome do curso
+    public String getCourseName() {
+        return courseName;
+    }
+}
+

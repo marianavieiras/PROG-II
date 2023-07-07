@@ -1,0 +1,36 @@
+package principal;
+
+public class sala{
+	private int numC;
+	private int numF;
+	private int [][] CadF = new int[10][6];
+	private int [] ing = new int[60];
+	private int sessao;
+
+	public sala(){
+		this.CadF = new int [numF][numC];
+	}
+	
+	public void ocupaCadeira(int NFileira, int NCadeira, int Nsessao) {
+		if (Nsessao >= 1 && Nsessao <= 5) {
+			for (int i = 0; i<60; i++) {
+				if (CadF[NFileira][NCadeira] == 0) {
+					CadF[NFileira][NCadeira] = 1;
+					ing[i] = 1;
+					System.out.println("Ingresso vendido com sucesso!");
+					break;
+				} else if (CadF[NFileira][NCadeira] == 1) {
+					System.out.println("Cadeira e fileira escolhida estão ocupadas!");
+					break;
+				} 
+			} 
+			
+		} else {
+				System.out.println("Sessão invalida!");
+			}
+		}
+	
+	
+	}
+
+

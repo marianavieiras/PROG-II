@@ -1,0 +1,17 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Exercicio_08 {
+	public static void main(String [] args) {
+		Scanner teclado = new Scanner (System.in);
+		System.out.printf("Caracter %c com o valor %d", 'A', ((int) 'A'));
+		System.out.printf("Caracter %c com o valor %d", 'B', ((int) 'B'));
+		System.out.printf("Caracter %c com o valor %d", 'C', ((int) 'C'));
+		System.out.printf("Caracter %c com o valor %d", 'a', ((int) 'a'));
+		System.out.printf("Caracter %c com o valor %d", 'b', ((int) 'b'));
+		System.out.printf("Caracter %c com o valor %d", 'c', ((int) 'c'));
+		
+	}
+
+}

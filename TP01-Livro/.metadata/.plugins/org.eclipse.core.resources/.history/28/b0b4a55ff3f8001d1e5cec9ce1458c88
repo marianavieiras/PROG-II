@@ -1,0 +1,19 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Exercicio_09 {
+	public static void main (String [] args) {
+		Scanner teclado = new Scanner (System.in);
+		System.out.println("Adicione um numero inteiro com 5 digitos: ");
+		int num = teclado.nextInt();
+		
+		int comprimento == num.length();
+		
+		 if (num.length == 5) {
+			 
+		 }
+		
+	}
+
+}

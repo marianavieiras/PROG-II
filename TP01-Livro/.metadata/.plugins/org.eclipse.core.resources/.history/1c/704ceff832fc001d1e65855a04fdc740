@@ -1,0 +1,24 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Exercicio_4_31 {
+	public static void main (String [] args) {
+		Scanner teclado = new Scanner (System.in);
+		
+		System.out.println("Adicione um numero binario (0 ou 1): ");
+		int bin = teclado.nextInt();
+		
+		if (bin == 0 || bin == 1) {
+			int posicao = 0;
+			int num = 0;
+	        while (bin > 0) {
+	            int digito = bin % 10;
+	            num += digito * Math.pow(2, posicao);
+	            posicao++;
+	            num /= 10;
+	        }
+		}
+		
+	}
+}

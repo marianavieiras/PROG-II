@@ -1,0 +1,58 @@
+package principal;
+
+import java.util.Scanner;
+
+public class HeartRatesTest {
+	public static void main (String [] args) {
+        Scanner teclado = new Scanner(System.in);
+      
+        System.out.print("Digite o nome: ");
+        String nome = teclado.nextLine();
+        System.out.print("Digite o sobrenome: ");
+        String sobrenome = teclado.nextLine();
+        System.out.print("Digite o sexo: ");
+        String sexo = teclado.nextLine();
+        
+        System.out.print("Ano de Nascimento: ");
+        int ano = teclado.nextInt();
+        System.out.print("Mês de Nascimento: ");
+        int mes = teclado.nextInt();
+        System.out.print("Dia de Nascimento: ");
+        int dia= teclado.nextInt();
+       
+
+        // Instancia um objeto da classe PerfilSaude
+        HeartRates p1 = new HeartRates (nome, sobrenome, sexo, dia, mes, ano);
+
+        // Imprime as informações
+        System.out.println("\nInformações da Pessoa:");
+        System.out.println("Nome: " + perfil.getNome() + " " + perfil.getSobrenome());
+        System.out.println("Sexo: " + perfil.getGenero());
+        System.out.println("Data de Nascimento: " + perfil.getDiaNascimento() + "/" + perfil.getMesNascimento() + "/" + perfil.getAnoNascimento());
+        System.out.println("Altura: " + perfil.getAlturaCentimetros() + " cm");
+        System.out.println("Peso: " + perfil.getPesoKilos() + " kg");
+
+        // Calcula e imprime a idade da pessoa em anos
+        int idade = perfil.calcularIdade();
+        System.out.println("\nIdade: " + idade + " anos");
+
+        // Calcula e imprime o IMC da pessoa
+        double imc = perfil.calcularIMC();
+        System.out.println("IMC: " + imc);
+
+        // Calcula e imprime o intervalo de frequência cardíaca máxima
+        int frequenciaMaxima = perfil.calcularFrequenciaCardiacaMaxima();
+        System.out.println("Intervalo de Frequência Cardíaca Máxima: 0.5 * " + frequenciaMaxima + " - 0.85 * " + frequenciaMaxima);
+
+        // Calcula e imprime a frequência cardíaca-alvo da pessoa
+        String frequenciaAlvo = perfil.calcularFrequenciaCardiacaAlvo();
+        System.out.println("Frequência Cardíaca-Alvo: " + frequenciaAlvo);
+
+        // Exibe o gráfico de valores IMC
+        System.out.println("\nGráfico de Valores IMC:");
+        System.out.println("Abaixo do Peso: menos de 18.5");
+        System.out.println("Normal: 18.5 - 24.9");
+        System.out.println("");
+}
+}
+

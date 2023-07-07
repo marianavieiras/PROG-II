@@ -1,0 +1,27 @@
+package principal;
+
+public class sala extends cliente{
+	private boolean [] fileira = new boolean[10];
+	private boolean [] cadeira = new boolean [6];
+	private int [] sessao  = new int [5];
+	
+	public sala (String nome, int idade, String sexo) {
+		super(this.nome; this.idade; this.sexo);
+	}
+	
+	public void ocupaCadeira(int NFileira, int NCadeira, int sessao) {
+		if (sessao >= 1 && sessao <= 5) {
+		if (fileira[NFileira] == false && cadeira [NCadeira] == false) {
+			fileira[NFileira] = true;
+			fileira[NCadeira] = true;
+		} else if (fileira[NFileira] == true && cadeira [NCadeira] == true) {
+			System.out.println("Cadeira e fileira escolhida estão ocupadas!");
+		} 
+	} else {
+		System.out.println("Sessão invalida!");
+	}
+	
+	
+	}
+
+}

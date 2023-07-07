@@ -1,0 +1,9 @@
+package principal;
+
+public class DateTest {
+	public static void main (String [] args) {
+		Date data = new Date(7, 26, 2001);
+		System.out.println(data.displayDate());
+	}
+
+}

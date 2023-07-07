@@ -1,0 +1,40 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Exercicio_09 {
+	public static void main (String [] args) {
+		Scanner teclado = new Scanner (System.in);
+		System.out.println("Adicione um numero inteiro com 5 digitos: ");
+		int num = teclado.nextInt();
+		
+		int comprimento = Contador (num);
+		
+		 if (comprimento == 5) {
+			 while (num != 0) {
+					num = num/10;
+					System.out.println("%d "+num);
+				}
+			 
+		 } else if (comprimento != 5) {
+			 System.out.println("Seu numero não contem apenas 5 numeros");
+		 }
+		
+	}
+	
+	public static int Contador (int num) {
+		int cont = 0;
+		
+		if (num == 0) {
+			return 1;
+		}
+		while (num != 0) {
+			num = num/10;
+			cont ++;
+		}
+		
+		return cont;
+		
+	}
+
+}

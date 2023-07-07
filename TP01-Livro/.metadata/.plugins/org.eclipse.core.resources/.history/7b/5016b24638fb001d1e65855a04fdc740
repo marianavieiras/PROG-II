@@ -1,0 +1,9 @@
+package principal;
+
+public class InvoiceTest {
+	public static void main (String [] args) {
+		Invoice p1 = new Invoice("1D2", "carne", 10, 4.67);
+		System.out.println(p1.getInvoiceAmount());
+	}
+
+}

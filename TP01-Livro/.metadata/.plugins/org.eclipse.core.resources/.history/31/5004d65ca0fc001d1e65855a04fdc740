@@ -1,0 +1,28 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Criptografa {
+	public static void main (String [] args) {
+		Scanner teclado = new Scanner (System.in);
+		
+		System.out.println("Insira um numero de 4 digitos: ");
+		int num = teclado.nextInt();
+		
+		int d1 = ((num / 1000) + 7) % 10;
+		num = num % 1000;
+		int d2 = ((num / 100) + 7) % 10;
+		num = num % 100;
+		int d3 = ((num / 10) + 7) % 10;
+		num = num % 10;
+		int d4 = (num + 7) % 10;
+		
+		int total = d1 * 1000 + d2 * 100 + d3 * 10 + d4;
+		
+		System.out.println ("Número criptografado: " + total);
+		
+		teclado.close();
+		
+		
+	}
+}

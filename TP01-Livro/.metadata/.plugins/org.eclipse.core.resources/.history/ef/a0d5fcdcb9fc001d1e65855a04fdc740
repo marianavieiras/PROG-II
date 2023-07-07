@@ -1,0 +1,27 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Descriptografa {
+		    public static void main(String[] args) {
+	        Scanner teclado = new Scanner(System.in);
+
+	        System.out.print("Insira um número de 4 dígitos criptografado: ");
+	        int num = teclado.nextInt();
+
+	        int d4 = (num % 10 + 7) % 10;
+	        num = num / 10;
+	        int d3 = (num % 10 + 7) % 10;
+	        num = num / 10;
+	        int d2 = (num % 10 + 7) % 10;
+	        num= num / 10;
+	        int d1 = (num % 10 + 7) % 10;
+
+	        int total = d3 * 1000 + d4 * 100 + d1 * 10 + d2;
+
+	        System.out.println("Número descriptografado: " + total);
+	    
+	        teclado.close();
+		    }
+	}
+
